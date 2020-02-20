@@ -1,0 +1,280 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    background-color: #e0e0e0;
+    user-select: none;
+}
+
+body{
+    font-family: sans-serif;
+    background: #e0e0e0;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 1px 4px #888888;
+}
+
+
+
+/* RGB title */
+span:nth-child(1){
+    color: #ff0000;
+}
+span:nth-child(2){
+    color: #00ff00;
+}
+span:nth-child(3){
+    color: #0000ff;
+}
+
+/* color display */
+#color-display{
+    margin-top: 10px;
+    padding:50px;
+    padding-bottom: 130px;
+    box-shadow: 0 0 8px #aaaaaa;
+    border-radius: 10px;
+}
+
+/* labels */
+label{
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    margin: 4px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 2px #333333;
+}
+
+input[type=number], label{
+    display: inline-block;
+}
+
+/* color sliders */
+.sliders{
+    display: flex;
+    width: 20.5vw;
+    box-shadow: 0 0 8px #aaaaaa;
+    border: 1px solid #f4f4f4;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.fit{
+    display: flex;
+    flex-direction: column;
+}
+
+.sliders div{
+    padding: 4px;
+}
+
+/* range sliders */
+.sliders input[type=range]{
+    height: 8px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    box-shadow: 0 0 2px #444444, inset 0 0 2px #444444;
+}
+
+.sliders input[type=range], input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+} 
+
+/* slider thumb */
+.sliders input[type=range]::-webkit-slider-thumb{
+    height: 9px;
+    width: 9px;
+    border-radius: 10%;
+    cursor: pointer;
+    background: #000;
+} 
+
+/* icons */
+a{
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+a:hover{
+    color: #cccccc;
+}
+
+.rect{
+    border: 10px solid red;
+    position: absolute;
+    user-select: none;
+}
+
+.circle{
+    border: 10px solid red;
+    position: absolute;
+    border-radius: 100%;
+    user-select: none;
+}
+
+#newMouse{
+    color: #1492E6;
+    user-select: none;
+}
+
+.fas{
+    color: #666666;
+    margin-top: 1vh;
+    user-select: none;
+}
+
+.far{
+    color: #666666;
+    user-select: none;
+}
+
+.fas:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+.far:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+.fas:active{
+    color: #1492E6;
+    user-select: none;
+}
+
+.far:active{
+    color: #1492E6;
+    user-select: none;
+}
+
+.toolbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2px;
+    margin-top: 5px;
+    user-select: none;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin-top: 5px;
+    user-select: none;
+}
+
+.screen{
+    display: flex;
+    user-select: none;
+}
+#top{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2px;
+    background-color: #F5F5F5;
+    height: 5vh;
+    user-select: none;
+}
+
+#first{
+    width: 4vw;
+    height: 50vh;
+    background-color: #F5F5F5;
+    user-select: none;
+}
+
+#second{
+    width: 4vw;
+    height: 20vh;
+    background-color: #F5F5F5;
+    user-select: none;
+}
+
+#third{
+    width: 4vw;
+    height: 20vh;
+    background-color: #F5F5F5;
+    user-select: none;
+}
+
+#canvas {
+    background-color: whitesmoke;
+    width: 72vw;
+    height: 91vh;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    user-select: none;
+}
+
+#canvasE{
+    z-index: 100;
+}
+
+#layers{
+    width: 20vw;
+    height: 54vh;
+    margin-top: 5px;
+    background-color: #F5F5F5;
+    border-radius: 2px;
+    user-select: none;
+    overflow: auto;
+}
+
+.layoutText{
+    margin: 0px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: #999999;
+    border: 2px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    user-select: none;
+}
+
+.layoutText:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+#cloud{
+    margin: 0px;
+    margin-top: -2.25vh;
+    margin-left: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: #999999;
+    user-select: none;
+}
+
+.fa-cloud:hover{
+    cursor: default;
+}
+.switch{
+    display: flex;
+    border-style: solid;
+    border-color: #666666;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #F5F5F5;
+    border-radius: 2px;
+    user-select: none;
+}
+
+h6{
+    margin: 10px;
+    user-select: none;
+}

@@ -1,0 +1,330 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#add{
+    border: 1px solid #dfe1e5;
+    width: 208px;
+    height: 338px;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0px -5px 10px  #fdfcfc;
+    display: flex;
+    justify-content: center;
+}
+
+#plus{
+    margin-top: 10%;
+    font-size: 165px;;
+    user-select: none;
+}
+
+.page{
+    border: 1px solid #dfe1e5;
+    width: 208px;
+    height: 338px;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0px -5px 10px  #fdfcfc;
+}
+
+.preview{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: whitesmoke;
+    height: 263px;
+    box-shadow: 0px -5px 20px #eff0f1 inset;
+}
+
+.title{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left: 16px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 184px;
+    height: 44px;
+    background-color: whitesmoke;
+    border: 1px solid #dfe1e5;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    box-shadow: 0px -5px 10px #fdfcfc inset;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search{
+    margin-top: 5vh;
+    width: 70vw;
+    height: 7.5vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 20px #eff0f1 inset;
+    border-radius: 10px;
+}
+
+#searchBox{
+    width: 70vw;
+    height: 7.5vh;
+    margin-top: 3.3035px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border: 1px solid #dfe1e5;
+    box-shadow: 0px -5px 20px #eff0f1 inset,
+    0px -5px 10px  #fdfcfc;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: #dadce0;
+    background-image: url("../materials/magnifyingGlass.png");
+    background-repeat: no-repeat;
+    background-size: 41px;
+    position: left;
+    padding-left: 45px;
+}
+
+#top{
+    display:flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.text{
+    user-select: none;
+    margin: 0px;
+    color: #414549;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+
+.editPage{
+    background-color: whitesmoke;
+    margin-left: 120px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #dfe1e5;
+    width: 132px;
+    margin-top: -30px;
+    position: absolute;
+    display: none;
+}
+
+.rename{
+    user-select: none;
+    cursor: pointer;
+    margin: 0px;
+    width: 102px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #414549;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rename:hover{
+    background-color: #dadce0;
+    color: whitesmoke;
+}
+
+.center{
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.paddingRename{
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.renamePage{
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #dfe1e5;
+    box-shadow: 
+    0px 0px 10px 2px #000;
+    width: 500px;
+    margin-top: 30vh;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.renameTitle{
+    user-select: none;
+    margin: 0px;
+    margin-bottom: 16px;
+    color: #202124;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+.askRename{
+    user-select: none;
+    margin: 0px;
+    margin-bottom: 16px;
+    color: #414549;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+.newName{
+    width: 400px;
+    height: 25px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 13px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.delete:hover{
+    background-color: #dadce0;
+    color: whitesmoke;
+}
+
+.flexEndRenameButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cancelRename{
+    cursor: pointer;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    color: #1A73E8;
+    background-color: #FFF;
+    border: 1px solid #dadce0;
+    width: 85px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.okRename{
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    border: 1px solid #dadce0;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    margin-left: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    background-color: #4D90FE;
+    color: #FFF;
+}
+
+.delete{
+    user-select: none;
+    cursor: pointer;
+    margin: 0px;
+    width: 102px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #414549;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    text-align: center;
+}
+
+.fa-bars{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.fa-ellipsis-v{
+    outline: none;
+    color: #444;
+    margin: 0px;
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.fa-ellipsis-v:hover{
+    background-color: #dadce0;
+    box-shadow: 
+    0px 0px 1px 10px #dadce0,
+    0px 0px 1px 10px #dadce0 inset,
+    0px 0px 1px 10px #dadce0 inset;
+    border-radius: 100%;
+}
+
+
+.fas:hover{
+    cursor: pointer;
+}
+
+#newSearch{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    font-size: 200%;
+    margin-top: 0.75%;
+    margin-left: 0.75%;
+}
+
+.page:hover{
+    cursor: pointer;
+}
+
+#add:hover{
+    cursor: pointer;
+}
+
+#pages{
+    display: flex;
+    flex-direction: row;
+    width: 73vw;
+    flex-wrap: wrap;
+    margin-left: 16.5vw;
+    margin-right: 16.5vw;
+}

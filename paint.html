@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/js/paint.js" defer></script>
+    <link rel="stylesheet" href="lib/css/paint.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="top">
+        <div>
+            <i id="menu" class="fas fa-bars"></i>
+            <a href="page.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+        <div>
+            <i class="fas fa-cloud">
+                <h5 id="cloud">Unititled - 1</h5 class="layoutText">
+            </i>
+        </div>
+        <div>
+            <i class="fas fa-user-plus"></i>
+            <i class="fas fa-caret-right"></i>
+        </div>
+    </div>
+    <div>
+        <div class="screen">
+            <div>
+                <div class="toolbar" id="first">
+                    <i id="newMouse" class="fas fa-mouse-pointer"></i>
+                    <i id="newSquare" class="far fa-square"></i>
+                    <i id="newCircle" class="far fa-circle"></i>
+                    <i id="newPen" class="fas fa-pen-nib"></i>
+                    <i id="newPaint" class="fas fa-paint-brush"></i>
+                    <i id="newEraser" class="fas fa-eraser"></i>
+                    <i id="newFill" class="fas fa-fill-drip"></i>
+                    <i id="newCrop" class="fas fa-crop-alt"></i>
+                </div>
+                <div class="toolbar" id="second">
+                    <i id="newText" class="fas fa-tenge"></i>
+                    <i id="newSearch" class="fas fa-search"></i>
+                </div>
+                <div class="toolbar" id="third">
+                    <i id="newEyedropper" class="fas fa-eye-dropper"></i>
+                </div>
+            </div>
+            <div id="canvas">
+                <canvas id="canvasE" width="800px" height="900px"></canvas>
+            </div>
+            <div>
+                <div class="settings">
+                        <div class="color-slider-wrap">
+                            <div class="sliders">
+                                <div>
+                                <div class="fit">
+                                    <label for="red">Red</label>
+                                    <input value="200" type="range" min="0" max="255" id="red">
+                                </div>
+                                <div class="fit"> 
+                                    <label for="green">Green</label>
+                                    <input value="130" type="range" min="0" max="255" id="green">
+                                </div>
+                                <div class="fit">
+                                    <label for="blue">Blue</label>
+                                    <input value="180" type="range" min="0" max="255" id="blue">
+                                </div>
+                                </div>
+                                <div class="color-wrap">
+                                    <div id="color-display"></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    <div id="layers">
+                        <div class="switch">
+                            <h5 class="layoutText">Layers</h5 class="layoutText">
+                        </div>
+                        <div id="inputLayers">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
